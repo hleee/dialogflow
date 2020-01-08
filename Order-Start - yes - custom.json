@@ -1,0 +1,168 @@
+{
+  "id": "fb761911-70c4-4a62-bff1-e126b17ac6c6",
+  "parentId": "9fe8e989-97d3-4da1-8b3a-83b0b1baa6f3",
+  "rootParentId": "86476bcd-3d9b-476e-9ce9-bb175416abde",
+  "name": "Order-Start - yes - custom",
+  "auto": true,
+  "contexts": [
+    "Order-Start-followup",
+    "Order-Start-yes-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Order-Start.Order-Start-yes.Order-Start-yes-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "aa2e20ee-778a-42b8-bb27-865bb29697fa",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "address",
+          "value": "$address",
+          "prompts": [
+            "주소를 입력해주세요"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "#Order-Start-followup.color #Order-Start-followup.Size 티셔츠를 $address(으)로 보내는 주문입니다."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "c7d22abb-b718-4c7b-acb4-a015a4859aef",
+      "data": [
+        {
+          "text": "서울",
+          "alias": "address",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "ba20c9d0-f469-4bba-8496-55bd4153b73a",
+      "data": [
+        {
+          "text": "서울시 마포구 공덕동",
+          "alias": "address",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "이요",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "d5f09787-9199-4b1c-ad88-c1650a414964",
+      "data": [
+        {
+          "text": "서울시 마포구 공덕동",
+          "alias": "address",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "으로 보내주세요",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "184b9c99-6d43-4c99-ae9d-0d9fa5122971",
+      "data": [
+        {
+          "text": "경기도 성남시 분당구",
+          "alias": "address",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "로 보내주세요.",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "260fed2c-148d-490f-9e1d-b8164e04e169",
+      "data": [
+        {
+          "text": "경기도 성남시 분당구",
+          "alias": "address",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "입니다.",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1dbd34ce-6633-421c-9644-a12bb833bbaf",
+      "data": [
+        {
+          "text": "경기도 성남시 분당구",
+          "alias": "address",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "예요",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": true,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}
